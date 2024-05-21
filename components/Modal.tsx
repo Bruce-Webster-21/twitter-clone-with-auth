@@ -1,7 +1,5 @@
 import { useCallback } from "react";
-
 import { AiOutlineClose } from "react-icons/ai";
-
 import Button from "./Button";
 
 interface ModalProps {
@@ -29,7 +27,6 @@ const Modal: React.FC<ModalProps> = ({
     if (disabled) {
       return;
     }
-
     onClose();
   }, [disabled, onClose]);
 
@@ -37,8 +34,7 @@ const Modal: React.FC<ModalProps> = ({
     if (disabled) {
       return;
     }
-
-    onSubmit;
+    onSubmit();
   }, [disabled, onSubmit]);
 
   if (!isOpen) {
