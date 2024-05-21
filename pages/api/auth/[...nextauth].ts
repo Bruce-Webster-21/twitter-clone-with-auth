@@ -25,7 +25,7 @@ export default NextAuth({
       name: "credentials",
       credentials: {
         email: { label: "email", type: "text" },
-        password: { label: "password", type: "text" },
+        password: { label: "password", type: "password" },
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) {
@@ -55,7 +55,7 @@ export default NextAuth({
       },
     }),
   ],
-  debug: process.env.NODE_ENV === "development",
+  debug: process.env.NODE_ENV == "development",
   session: {
     strategy: "jwt",
   },
