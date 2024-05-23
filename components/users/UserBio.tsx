@@ -20,7 +20,7 @@ const UserBio: React.FC<UserBioProps> = ({ userId }) => {
 
     return format(new Date(fetchedUser.createdAt), "MMMM yyyy");
   }, [fetchedUser?.createdAt]);
-  return <div></div>;
+  return <div className=""></div>;
 };
 
 export default UserBio;
