@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
         secondary ? "text-black" : "text-white"
       } ${secondary ? "border-black" : "border-sky-500"} ${
         large ? "text-xl" : "text-md"
-      } ${large ? "p-5" : "p-4"} ${large ? "py-3" : "pt-2"} ${
+      } ${large ? "p-5" : "p-4"} ${large ? "py-3" : "py-2"} ${
         outline ? "bg-transparent" : ""
       } ${outline ? "border-white" : ""} ${outline ? "text-white" : ""}`}
     >
